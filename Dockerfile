@@ -538,9 +538,9 @@ RUN set -xe && \
     apt-get update && \
     apt-get install -y --no-install-recommends git libcap-dev && \
     rm -rf /var/lib/apt/lists/* && \
-    git clone https://github.com/judge0/isolate.git /tmp/isolate && \
+    git clone https://github.com/sahilpahuja963/j0-isolate.git /tmp/isolate && \
     cd /tmp/isolate && \
-    git checkout ad39cc4d0fbb577fb545910095c9da5ef8fc9a1a && \
+    git checkout 2a0590a669bcd329fc4c5df272ee9919e6b2daab && \
     make -j$(nproc) install && \
     rm -rf /tmp/*
 ENV BOX_ROOT /var/local/lib/isolate
